@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.451">
+<meta name="generator" content="quarto-1.3.450">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="A free course designed for people with some coding experience, who want to learn how to apply deep learning and machine learning to practical problems.">
-<title>Practical Deep Learning for Coders - Practical Deep Learning</title>
+
+
+<title>Quarto Computations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,725 +20,184 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Lessons/lesson1.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
   }
-}</script>
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Practical Deep Learning for Coders - Practical Deep Learning">
-<meta property="og:description" content="A free course designed for people with some coding experience, who want to learn how to apply deep learning and machine learning to practical problems.">
-<meta property="og:image" content="https://course.fast.ai/www/social.png">
-<meta property="og:site_name" content="Practical Deep Learning for Coders">
-<meta name="twitter:title" content="Practical Deep Learning for Coders - Practical Deep Learning">
-<meta name="twitter:description" content="A free course designed for people with some coding experience, who want to learn how to apply deep learning and machine learning to practical problems.">
-<meta name="twitter:image" content="https://course.fast.ai/www/social.png">
-<meta name="twitter:card" content="summary_large_image">
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="QuartoComputations_files/libs/clipboard/clipboard.min.js"></script>
+<script src="QuartoComputations_files/libs/quarto-html/quarto.js"></script>
+<script src="QuartoComputations_files/libs/quarto-html/popper.min.js"></script>
+<script src="QuartoComputations_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="QuartoComputations_files/libs/quarto-html/anchor.min.js"></script>
+<link href="QuartoComputations_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="QuartoComputations_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="QuartoComputations_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="QuartoComputations_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="QuartoComputations_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.12.1.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
 </head>
-<body class="nav-sidebar floating nav-fixed">
-<div id="quarto-search-results"></div>
-<header id="quarto-header" class="headroom fixed-top">
-<nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="./index.html">
-<span class="navbar-title">Practical Deep Learning for Coders</span>
-</a>
-</div>
-<div id="quarto-search" class title="Search"></div>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
-<a class="nav-link" href="https://github.com/fastai/course22"> <i class="bi bi-github" role="img">
-</i>
-<span class="menu-text"></span></a>
-</li>
-</ul>
-</div> 
-<div class="quarto-navbar-tools">
-<a href class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-<div class="quarto-reader-toggle-btn">
-<i class="bi"></i>
-</div>
-</a>
-</div>
-</div> 
-</nav>
-<nav class="quarto-secondary-nav">
-<div class="container-fluid d-flex">
-<button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-<i class="bi bi-layout-text-sidebar-reverse"></i>
-</button>
-<nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Practical Deep Learning</a></li></ol></nav>
-<a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-</a>
-</div>
-</nav>
-</header>
 
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<body class="fullcontent">
 
-<nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-<div class="sidebar-menu-container">
-<ul class="list-unstyled mt-1">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./index.html" class="sidebar-item-text sidebar-link active">
-<span class="menu-text">Practical Deep Learning</span></a>
-</div>
-</li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
-<span class="menu-text">Part 1</span></a>
-<a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson1.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">1: Getting started</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson2.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">2: Deployment</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson3.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">3: Neural net foundations</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson4.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">4: Natural Language (NLP)</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson5.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">5: From-scratch model</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson6.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">6: Random forests</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson7.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">7: Collaborative filtering</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson8.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">8: Convolutions (CNNs)</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson8a.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Bonus: Data ethics</span></a>
-</div>
-</li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
-<span class="menu-text">Summaries</span></a>
-<a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson1.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 1</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson2.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 2</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson3.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 3</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson4.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 4</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson5.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 5</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson6.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 6</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson7.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 7</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/Summaries/lesson8.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Lesson 8</span></a>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
-<span class="menu-text">Part 2</span></a>
-<a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/part2.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Part 2 overview</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson9.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">9: Stable Diffusion</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson10.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">10: Diving Deeper</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson11.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">11: Matrix multiplication</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson12.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">12: Mean shift clustering</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson13.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">13: Backpropagation &amp; MLP</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson14.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">14: Backpropagation</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson15.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">15: Autoencoders</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson16.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">16: The Learner framework</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson17.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">17: Initialization/normalization</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson18.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">18: Accelerated SGD &amp; ResNets</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson19.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">19: DDPM and Dropout</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson20.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">20: Mixed Precision</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson21.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">21: DDIM</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson22.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">22: Karras et al (2022)</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson23.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">23: Super-resolution</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson24.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">24: Attention &amp; transformers</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Lessons/lesson25.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">25: Latent diffusion</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="https://youtu.be/0_BBRNYInx8" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Bonus: Lesson 9a</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="https://youtu.be/mYpjmM7O-30" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Bonus: Lesson 9b</span></a>
-</div>
-</li>
-</ul>
-</li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
-<span class="menu-text">Resources</span></a>
-<a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Resources/book.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">The book</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Resources/forums.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Forums</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Resources/kaggle.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Kaggle</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a href="./Resources/testimonials.html" class="sidebar-item-text sidebar-link">
-<span class="menu-text">Testimonials</span></a>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-<nav id="TOC" role="doc-toc" class="toc-active">
-<h2 id="toc-title">On this page</h2>
-<ul>
-<li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a></li>
-<li><a href="#real-results" id="toc-real-results" class="nav-link" data-scroll-target="#real-results">Real results</a></li>
-<li><a href="#your-teacher" id="toc-your-teacher" class="nav-link" data-scroll-target="#your-teacher">Your teacher</a></li>
-<li><a href="#is-this-course-for-me" id="toc-is-this-course-for-me" class="nav-link" data-scroll-target="#is-this-course-for-me">Is this course for me?</a></li>
-<li><a href="#the-software-you-will-be-using" id="toc-the-software-you-will-be-using" class="nav-link" data-scroll-target="#the-software-you-will-be-using">The software you will be using</a></li>
-<li><a href="#why-deep-learning" id="toc-why-deep-learning" class="nav-link" data-scroll-target="#why-deep-learning">Why deep learning?</a></li>
-<li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link" data-scroll-target="#what-you-will-learn">What you will learn</a></li>
-<li><a href="#how-do-i-get-started" id="toc-how-do-i-get-started" class="nav-link" data-scroll-target="#how-do-i-get-started">How do I get started?</a></li>
-</ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/fastai/course22-web/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
-</div>
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
 <main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practical Deep Learning</h1>
+<h1 class="title">Quarto Computations</h1>
 </div>
-<div>
-<div class="description">
-A free course designed for people with some coding experience, who want to learn how to apply deep learning and machine learning to practical problems.
-</div>
-</div>
+
+
+
 <div class="quarto-title-meta">
-</div>
+
+    
+  
+    
+  </div>
+  
+
 </header>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-New!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We just launched a new &gt;30 hour video course for more experienced students:</p>
-<p><a href="./Lessons/part2.html">Practical Deep Learning for Coders part 2: <em>Deep Learning Foundations to Stable Diffusion</em></a></p>
-</div>
-</div>
-<div>
-</div>
-<div class="quarto-layout-panel" data-layout="[30,70]">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<p><img src="images/pencil_sketch.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<p>This free course is designed for people (and bunnies!) with some coding experience who want to learn how to apply deep learning and machine learning to practical problems.<br><br>Deep learning can do all kinds of amazing things. For instance, all illustrations throughout this website are made with deep learning, using <a href="https://openai.com/dall-e-2/">DALL-E 2</a>.</p>
-</div>
-</div>
-</div>
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
-<p>Practical Deep Learning for Coders 2022 part 1, recorded at the <a href="https://www.uq.edu.au/">University of Queensland</a>, covers topics such as how to:</p>
-<div>
-</div>
-<div class="quarto-layout-panel" data-layout="[30,70]">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<p><img src="images/imagine.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<ul>
-<li>Build and train deep learning models for computer vision, natural language processing, tabular analysis, and collaborative filtering problems</li>
-<li>Create random forests and regression models</li>
-<li>Deploy models</li>
-<li>Use PyTorch, the world’s fastest growing deep learning software, plus popular libraries like fastai and Hugging Face</li>
-</ul>
-</div>
-</div>
-</div>
-<p>There are 9 lessons, and each lesson is around 90 minutes long. The course is based on our <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">5-star rated book</a>, which is <a href="./Resources/book.html">freely available</a> online.</p>
-<p>You don’t need any special hardware or software — we’ll show you how to use free resources for both building and deploying models. You don’t need any university math either — we’ll teach you the calculus and linear algebra you need during the course.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
+
+<section id="numpy" class="level2">
+<h2 class="anchored" data-anchor-id="numpy">NumPy</h2>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">15</span>).reshape(<span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])</code></pre>
 </div>
 </div>
 </section>
-<section id="real-results" class="level2">
-<h2 class="anchored" data-anchor-id="real-results">Real results</h2>
-<p>Our videos have been viewed over 6,000,000 times already! Take a look at the <a href="./Resources/testimonials.html">dozens of testimonials</a> about our book and course by alumni, top academics, and industry experts.</p>
-<div>
-</div>
-<div class="quarto-layout-panel" data-layout="[70,30]">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<blockquote class="blockquote">
-<p><em>‘Deep Learning is for everyone’ we see in Chapter 1, Section 1 of this book, and while other books may make similar claims, this book delivers on the claim. The authors have extensive knowledge of the field but are able to describe it in a way that is perfectly suited for a reader with experience in programming but not in machine learning. The book shows examples first, and only covers theory in the context of concrete examples. For most people, this is the best way to learn. The book does an impressive job of covering the key applications of deep learning in computer vision, natural language processing, and tabular data processing, but also covers key topics like data ethics that some other books miss. Altogether, this is one of the best sources for a programmer to become proficient in deep learning.</em></p>
-</blockquote>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<p><img src="images/people/norvig.jpg" class="img-fluid"><br><strong>Peter Norvig</strong><br>Director of Research, Google</p>
-</div>
-</div>
-</div>
-<p>By the end of the second lesson, you will have built and deployed your own deep learning model on data you collect. Many students post their course projects to our forum; you can <a href="https://forums.fast.ai/t/share-your-work-here/96015">view them here</a>. For instance, if there’s an unknown dinosaur in your backyard, maybe you need this <a href="https://notebooksg.jarvislabs.ai/U7mQvWgvra53-YvTogLgJCfNzgJxRJv238Go2bHoAmHBqQFHoOL1ZFeKDG8gYmnO/">dinosaur classifier</a>!</p>
-<p><img src="https://user-images.githubusercontent.com/346999/177054810-3e56fcb1-4fb7-418a-b10b-351bab20bf6b.png" class="img-fluid"></p>
-<p>Alumni of our course have gone on to jobs at organizations like <strong>Google Brain</strong>, <strong>OpenAI</strong>, <strong>Adobe</strong>, <strong>Amazon</strong>, and <strong>Tesla</strong>, published research at top conferences such as <a href="https://en.wikipedia.org/wiki/Conference_on_Neural_Information_Processing_Systems">NeurIPS</a>, and created startups using skills they learned here. Petro Cuenca, lead developer of the widely-acclaimed <a href="https://camera.plus/">Camera+</a> app, after completing the course went on to add deep learning features to his product, which was then <a href="https://twitter.com/pcuenq/status/1540121042596904963">featured by Apple</a> for its “machine learning magic”.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
+<section id="matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="matplotlib">Matplotlib</h2>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">2.5</span> <span class="op">*</span> np.sin(x <span class="op">/</span> <span class="dv">20</span> <span class="op">*</span> np.pi)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>yerr <span class="op">=</span> np.linspace(<span class="fl">0.05</span>, <span class="fl">0.2</span>, <span class="dv">10</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">3</span>, yerr<span class="op">=</span>yerr, label<span class="op">=</span><span class="st">'both limits (default)'</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">2</span>, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span><span class="va">True</span>, label<span class="op">=</span><span class="st">'uplims=True'</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y <span class="op">+</span> <span class="dv">1</span>, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span><span class="va">True</span>, lolims<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>             label<span class="op">=</span><span class="st">'uplims=True, lolims=True'</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>upperlimits <span class="op">=</span> [<span class="va">True</span>, <span class="va">False</span>] <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>lowerlimits <span class="op">=</span> [<span class="va">False</span>, <span class="va">True</span>] <span class="op">*</span> <span class="dv">5</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>plt.errorbar(x, y, yerr<span class="op">=</span>yerr, uplims<span class="op">=</span>upperlimits, lolims<span class="op">=</span>lowerlimits,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>             label<span class="op">=</span><span class="st">'subsets of uplims and lolims'</span>)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'lower right'</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>plt.show(fig)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="QuartoComputations_files/figure-html/cell-3-output-1.png" width="558" height="411"></p>
 </div>
 </div>
 </section>
-<section id="your-teacher" class="level2">
-<h2 class="anchored" data-anchor-id="your-teacher">Your teacher</h2>
-<div>
-</div>
-<div class="quarto-layout-panel" data-layout="[70,30]">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<p>I am Jeremy Howard, your guide on this journey. I lead the development of fastai, the software that you’ll be using throughout this course. I have been using and teaching machine learning for around 30 years. I was the top-ranked competitor globally in machine learning competitions on Kaggle (the world’s largest machine learning community) two years running. Following this success, I became the President and Chief Scientist of Kaggle. Since first using neural networks 25 years ago, I have led many companies and projects that have machine learning at their core, including founding the first company to focus on deep learning and medicine, Enlitic (chosen by MIT Tech Review as one of the “world’s smartest companies”).</p>
-</div>
-<div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<figure class="figure">
-<p><img src="images/people/jeremy.jpg" class="img-fluid figure-img"></p>
-<figcaption>Jeremy Howard</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>I am the co-founder, along with Dr.&nbsp;Rachel Thomas, of fast.ai, the organization behind this course. At fast.ai we care a lot about teaching. In this course, I start by showing how to use a complete, working, very usable, state-of-the-art deep learning network to solve real-world problems, using simple, expressive tools. And then we gradually dig deeper and deeper into understanding how those tools are made, and how the tools that make those tools are made, and so on… We always teach through examples. We ensure that there is a context and a purpose that you can understand intuitively, rather than starting with algebraic symbol manipulation.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
-</div>
-</div>
-</section>
-<section id="is-this-course-for-me" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-course-for-me">Is this course for me?</h2>
-<p>Previous fast.ai courses have been studied by hundreds of thousands of students, from all walks of life, from all parts of the world. Many students have told us about how they’ve become <a href="https://forums.fast.ai/t/my-first-gold-medal/54237">multiple gold medal winners</a> of <a href="https://towardsdatascience.com/my-3-year-journey-from-zero-python-to-deep-learning-competition-master-6605c188eec7">international machine learning competitions</a>, <a href="https://forums.fast.ai/t/how-has-your-journey-been-so-far-learners/6480/2">received offers</a> from top companies, and having <a href="https://ui.adsabs.harvard.edu/abs/2020EGUGA..2221465A/abstract">research</a> <a href="http://www.ieomsociety.org/ieom2020/papers/37.pdf">papers</a> <a href="https://pubs.rsna.org/doi/abs/10.1148/ryai.2019190113?journalCode=ai">published</a>. For instance, Isaac Dimitrovsky <a href="https://forums.fast.ai/t/thanks-ra2-dream-challenge-win/76875">told us</a> that he had “<em>been playing around with ML for a couple of years without really grokking it… [then] went through the fast.ai part 1 course late last year, and it clicked for me</em>”. He went on to achieve first place in the prestigious international <a href="https://www.synapse.org/#!Synapse:syn20545111/wiki/594083">RA2-DREAM Challenge</a> competition! He developed a <a href="https://www.synapse.org/#!Synapse:syn21478998/wiki/604432">multistage deep learning method</a> for scoring radiographic hand and foot joint damage in rheumatoid arthritis, taking advantage of the fastai library.</p>
-<p>It doesn’t matter if you don’t come from a technical or a mathematical background (though it’s okay if you do too!); we wrote this course to make deep learning accessible to as many people as possible. The only prerequisite is that you know how to code (a year of experience is enough), preferably in Python, and that you have at least followed a high school math course.</p>
-<p>Deep learning is a computer technique to extract and transform data–-with use cases ranging from human speech recognition to animal imagery classification–-by using multiple layers of neural networks. A lot of people assume that you need all kinds of hard-to-find stuff to get great results with deep learning, but as you’ll see in this course, those people are wrong. Here’s a few things you <em>absolutely don’t need</em> to do world-class deep learning:</p>
-<table class="table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Myth (don’t need)</th>
-<th>Truth</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lots of math</td>
-<td>Just high school math is sufficient</td>
-</tr>
-<tr class="even">
-<td>Lots of data</td>
-<td>We’ve seen record-breaking results with &lt;50 items of data</td>
-</tr>
-<tr class="odd">
-<td>Lots of expensive computers</td>
-<td>You can get what you need for state of the art work for free</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
+<section id="plotly" class="level2">
+<h2 class="anchored" data-anchor-id="plotly">Plotly</h2>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>gapminder <span class="op">=</span> px.data.gapminder()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>gapminder2007 <span class="op">=</span> gapminder.query(<span class="st">"year == 2007"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter(gapminder2007, </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                 x<span class="op">=</span><span class="st">"gdpPercap"</span>, y<span class="op">=</span><span class="st">"lifeExp"</span>, color<span class="op">=</span><span class="st">"continent"</span>, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                 size<span class="op">=</span><span class="st">"pop"</span>, size_max<span class="op">=</span><span class="dv">60</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>                 hover_name<span class="op">=</span><span class="st">"country"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="f3081d83-2182-4a85-a306-405a51340be3" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("f3081d83-2182-4a85-a306-405a51340be3")) {                    Plotly.newPlot(                        "f3081d83-2182-4a85-a306-405a51340be3",                        [{"hovertemplate":"<b>%{hovertext}</b><br><br>continent=Asia<br>gdpPercap=%{x}<br>lifeExp=%{y}<br>pop=%{marker.size}<extra></extra>","hovertext":["Afghanistan","Bahrain","Bangladesh","Cambodia","China","Hong Kong, China","India","Indonesia","Iran","Iraq","Israel","Japan","Jordan","Korea, Dem. Rep.","Korea, Rep.","Kuwait","Lebanon","Malaysia","Mongolia","Myanmar","Nepal","Oman","Pakistan","Philippines","Saudi Arabia","Singapore","Sri Lanka","Syria","Taiwan","Thailand","Vietnam","West Bank and Gaza","Yemen, Rep."],"legendgroup":"Asia","marker":{"color":"#636efa","size":[31889923,708573,150448339,14131858,1318683096,6980412,1110396331,223547000,69453570,27499638,6426679,127467972,6053193,23301725,49044790,2505559,3921278,24821286,2874127,47761980,28901790,3204897,169270617,91077287,27601038,4553009,20378239,19314747,23174294,65068149,85262356,4018332,22211743],"sizemode":"area","sizeref":366300.86,"symbol":"circle"},"mode":"markers","name":"Asia","orientation":"v","showlegend":true,"x":[974.5803384,29796.04834,1391.253792,1713.778686,4959.114854,39724.97867,2452.210407,3540.651564,11605.71449,4471.061906,25523.2771,31656.06806,4519.461171,1593.06548,23348.139730000006,47306.98978,10461.05868,12451.6558,3095.7722710000007,944.0,1091.359778,22316.19287,2605.94758,3190.481016,21654.83194,47143.17964,3970.095407,4184.548089,28718.27684,7458.396326999998,2441.576404,3025.349798,2280.769906],"xaxis":"x","y":[43.828,75.635,64.062,59.723,72.961,82.208,64.69800000000001,70.65,70.964,59.545,80.745,82.603,72.535,67.297,78.623,77.58800000000002,71.993,74.241,66.803,62.069,63.785,75.64,65.483,71.688,72.777,79.972,72.396,74.143,78.4,70.616,74.249,73.422,62.698],"yaxis":"y","type":"scatter"},{"hovertemplate":"<b>%{hovertext}</b><br><br>continent=Europe<br>gdpPercap=%{x}<br>lifeExp=%{y}<br>pop=%{marker.size}<extra></extra>","hovertext":["Albania","Austria","Belgium","Bosnia and Herzegovina","Bulgaria","Croatia","Czech Republic","Denmark","Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy","Montenegro","Netherlands","Norway","Poland","Portugal","Romania","Serbia","Slovak Republic","Slovenia","Spain","Sweden","Switzerland","Turkey","United Kingdom"],"legendgroup":"Europe","marker":{"color":"#EF553B","size":[3600523,8199783,10392226,4552198,7322858,4493312,10228744,5468120,5238460,61083916,82400996,10706290,9956108,301931,4109086,58147733,684736,16570613,4627926,38518241,10642836,22276056,10150265,5447502,2009245,40448191,9031088,7554661,71158647,60776238],"sizemode":"area","sizeref":366300.86,"symbol":"circle"},"mode":"markers","name":"Europe","orientation":"v","showlegend":true,"x":[5937.029525999998,36126.4927,33692.60508,7446.298803,10680.79282,14619.222719999998,22833.30851,35278.41874,33207.0844,30470.0167,32170.37442,27538.41188,18008.94444,36180.78919,40675.99635,28569.7197,9253.896111,36797.93332,49357.19017,15389.924680000002,20509.64777,10808.47561,9786.534714,18678.31435,25768.25759,28821.0637,33859.74835,37506.41907,8458.276384,33203.26128],"xaxis":"x","y":[76.423,79.829,79.441,74.852,73.005,75.748,76.486,78.332,79.313,80.657,79.406,79.483,73.33800000000002,81.757,78.885,80.546,74.543,79.762,80.196,75.563,78.098,72.476,74.002,74.663,77.926,80.941,80.884,81.70100000000002,71.777,79.425],"yaxis":"y","type":"scatter"},{"hovertemplate":"<b>%{hovertext}</b><br><br>continent=Africa<br>gdpPercap=%{x}<br>lifeExp=%{y}<br>pop=%{marker.size}<extra></extra>","hovertext":["Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cameroon","Central African Republic","Chad","Comoros","Congo, Dem. Rep.","Congo, Rep.","Cote d'Ivoire","Djibouti","Egypt","Equatorial Guinea","Eritrea","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea-Bissau","Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali","Mauritania","Mauritius","Morocco","Mozambique","Namibia","Niger","Nigeria","Reunion","Rwanda","Sao Tome and Principe","Senegal","Sierra Leone","Somalia","South Africa","Sudan","Swaziland","Tanzania","Togo","Tunisia","Uganda","Zambia","Zimbabwe"],"legendgroup":"Africa","marker":{"color":"#00cc96","size":[33333216,12420476,8078314,1639131,14326203,8390505,17696293,4369038,10238807,710960,64606759,3800610,18013409,496374,80264543,551201,4906585,76511887,1454867,1688359,22873338,9947814,1472041,35610177,2012649,3193942,6036914,19167654,13327079,12031795,3270065,1250882,33757175,19951656,2055080,12894865,135031164,798094,8860588,199579,12267493,6144562,9118773,43997828,42292929,1133066,38139640,5701579,10276158,29170398,11746035,12311143],"sizemode":"area","sizeref":366300.86,"symbol":"circle"},"mode":"markers","name":"Africa","orientation":"v","showlegend":true,"x":[6223.367465,4797.231267,1441.284873,12569.85177,1217.032994,430.0706916,2042.09524,706.016537,1704.063724,986.1478792,277.5518587,3632.557798,1544.750112,2082.4815670000007,5581.180998,12154.08975,641.3695236000002,690.8055759,13206.48452,752.7497265,1327.60891,942.6542111,579.2317429999998,1463.249282,1569.331442,414.5073415,12057.49928,1044.770126,759.3499101,1042.581557,1803.151496,10956.99112,3820.17523,823.6856205,4811.060429,619.6768923999998,2013.977305,7670.122558,863.0884639000002,1598.435089,1712.472136,862.5407561000002,926.1410683,9269.657808,2602.394995,4513.480643,1107.482182,882.9699437999999,7092.923025,1056.380121,1271.211593,469.70929810000007],"xaxis":"x","y":[72.301,42.731,56.728,50.728,52.295,49.58,50.43,44.74100000000001,50.651,65.152,46.462,55.322,48.328,54.791,71.33800000000002,51.57899999999999,58.04,52.947,56.735,59.448,60.022,56.007,46.38800000000001,54.11,42.592,45.678,73.952,59.44300000000001,48.303,54.467,64.164,72.801,71.164,42.082,52.90600000000001,56.867,46.859,76.442,46.242,65.528,63.062,42.56800000000001,48.159,49.339,58.556,39.613,52.517,58.42,73.923,51.542,42.38399999999999,43.487],"yaxis":"y","type":"scatter"},{"hovertemplate":"<b>%{hovertext}</b><br><br>continent=Americas<br>gdpPercap=%{x}<br>lifeExp=%{y}<br>pop=%{marker.size}<extra></extra>","hovertext":["Argentina","Bolivia","Brazil","Canada","Chile","Colombia","Costa Rica","Cuba","Dominican Republic","Ecuador","El Salvador","Guatemala","Haiti","Honduras","Jamaica","Mexico","Nicaragua","Panama","Paraguay","Peru","Puerto Rico","Trinidad and Tobago","United States","Uruguay","Venezuela"],"legendgroup":"Americas","marker":{"color":"#ab63fa","size":[40301927,9119152,190010647,33390141,16284741,44227550,4133884,11416987,9319622,13755680,6939688,12572928,8502814,7483763,2780132,108700891,5675356,3242173,6667147,28674757,3942491,1056608,301139947,3447496,26084662],"sizemode":"area","sizeref":366300.86,"symbol":"circle"},"mode":"markers","name":"Americas","orientation":"v","showlegend":true,"x":[12779.37964,3822.137084,9065.800825,36319.23501,13171.63885,7006.580419,9645.06142,8948.102923,6025.3747520000015,6873.262326000001,5728.353514,5186.050003,1201.637154,3548.3308460000007,7320.8802620000015,11977.57496,2749.320965,9809.185636,4172.838464,7408.905561,19328.70901,18008.50924,42951.65309,10611.46299,11415.80569],"xaxis":"x","y":[75.32,65.554,72.39,80.653,78.553,72.889,78.782,78.273,72.235,74.994,71.878,70.259,60.916,70.19800000000001,72.567,76.195,72.899,75.53699999999998,71.752,71.421,78.74600000000002,69.819,78.242,76.384,73.747],"yaxis":"y","type":"scatter"},{"hovertemplate":"<b>%{hovertext}</b><br><br>continent=Oceania<br>gdpPercap=%{x}<br>lifeExp=%{y}<br>pop=%{marker.size}<extra></extra>","hovertext":["Australia","New Zealand"],"legendgroup":"Oceania","marker":{"color":"#FFA15A","size":[20434176,4115771],"sizemode":"area","sizeref":366300.86,"symbol":"circle"},"mode":"markers","name":"Oceania","orientation":"v","showlegend":true,"x":[34435.367439999995,25185.00911],"xaxis":"x","y":[81.235,80.204],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"gdpPercap"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"lifeExp"}},"legend":{"title":{"text":"continent"},"tracegroupgap":0,"itemsizing":"constant"},"margin":{"t":60}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('f3081d83-2182-4a85-a306-405a51340be3');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
 </div>
 </div>
 </section>
-<section id="the-software-you-will-be-using" class="level2">
-<h2 class="anchored" data-anchor-id="the-software-you-will-be-using">The software you will be using</h2>
-<p>In this course, you’ll be using <a href="https://pytorch.org/">PyTorch</a>, <a href="https://docs.fast.ai">fastai</a>, Hugging Face <a href="https://huggingface.co/docs/transformers/index">Transformers</a>, and <a href="https://gradio.app/">Gradio</a>.</p>
-<p>We’ve completed hundreds of machine learning projects using dozens of different packages, and many different programming languages. At fast.ai, we have written courses using most of the main deep learning and machine learning packages used today. We spent over a thousand hours testing PyTorch before deciding that we would use it for future courses, software development, and research. PyTorch is now the world’s fastest-growing deep learning library and is already used for most research papers at top conferences.</p>
-<p>PyTorch works best as a low-level foundation library, providing the basic operations for higher-level functionality. The fastai library one of the most popular libraries for adding this higher-level functionality on top of PyTorch. In this course, as we go deeper and deeper into the foundations of deep learning, we will also go deeper and deeper into the layers of fastai.</p>
-<p>Transformers is a popular library focused on natural language processing (NLP) using <em>transformers models</em>. In the course you’ll see how to create a cutting-edge transfomers model using this library to detect similar concepts in patent applications.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
-</div>
-</div>
-</section>
-<section id="why-deep-learning" class="level2">
-<h2 class="anchored" data-anchor-id="why-deep-learning">Why deep learning?</h2>
-<p>Deep learning has power, flexibility, and simplicity. That’s why we believe it should be applied across many disciplines. These include the social and physical sciences, the arts, medicine, finance, scientific research, and many more. Here’s a list of some of the thousands of tasks in different areas at which deep learning, or methods heavily using deep learning, is now the best in the world:</p>
-<ul>
-<li><strong>Natural language processing (NLP)</strong> Answering questions; speech recognition; summarizing documents; classifying documents; finding names, dates, etc. in documents; searching for articles mentioning a concept</li>
-<li><strong>Computer vision</strong> Satellite and drone imagery interpretation (e.g., for disaster resilience); face recognition; image captioning; reading traffic signs; locating pedestrians and vehicles in autonomous vehicles</li>
-<li><strong>Medicine</strong> Finding anomalies in radiology images, including CT, MRI, and X-ray images; counting features in pathology slides; measuring features in ultrasounds; diagnosing diabetic retinopathy</li>
-<li><strong>Biology</strong> Folding proteins; classifying proteins; many genomics tasks, such as tumor-normal sequencing and classifying clinically actionable genetic mutations; cell classification; analyzing protein/protein interactions</li>
-<li><strong>Image generation</strong> Colorizing images; increasing image resolution; removing noise from images; converting images to art in the style of famous artists</li>
-<li><strong>Recommendation systems</strong> Web search; product recommendations; home page layout</li>
-<li><strong>Playing games</strong> Chess, Go, most Atari video games, and many real-time strategy games</li>
-<li><strong>Robotics</strong> Handling objects that are challenging to locate (e.g., transparent, shiny, lacking texture) or hard to pick up</li>
-<li><strong>Other applications</strong> Financial and logistical forecasting, text to speech, and much more…</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
-</div>
-</div>
-</section>
-<section id="what-you-will-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-learn">What you will learn</h2>
-<p>After finishing this course you will know:</p>
-<ul>
-<li>How to train models that achieve state-of-the-art results in:
-<ul>
-<li>Computer vision, including image classification (e.g.,&nbsp;classifying pet photos by breed)</li>
-<li>Natural language processing (NLP), including document classification (e.g.,&nbsp;movie review sentiment analysis) and phrase similarity</li>
-<li>Tabular data with categorical data, continuous data, and mixed data</li>
-<li>Collaborative filtering (e.g.,&nbsp;movie recommendation)</li>
-</ul></li>
-<li>How to turn your models into web applications, and deploy them</li>
-<li>Why and how deep learning models work, and how to use that knowledge to improve the accuracy, speed, and reliability of your models</li>
-<li>The latest deep learning techniques that really matter in practice</li>
-<li>How to implement stochastic gradient descent and a complete training loop from scratch</li>
-</ul>
-<p>Here are some of the techniques covered (don’t worry if none of these words mean anything to you yet–you’ll learn them all soon):</p>
-<ul>
-<li>Random forests and gradient boosting</li>
-<li>Affine functions and nonlinearities</li>
-<li>Parameters and activations</li>
-<li>Transfer learning</li>
-<li>Stochastic gradient descent (SGD)</li>
-<li>Data augmentation</li>
-<li>Weight decay</li>
-<li>Image classification</li>
-<li>Entity and word embeddings</li>
-<li>And much more</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
-</div>
-</div>
-</section>
-<section id="how-do-i-get-started" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-i-get-started">How do I get started?</h2>
-<p>To watch the videos, click on the <em>Lessons</em> section in the navigation sidebar. The videos are all captioned; while watching the video click the “CC” button to turn them on and off. To get a sense of what’s covered in a lesson, you might want to skim through some lesson notes taken by one of our students (thanks Daniel!). Here’s his <a href="./Lessons/Summaries/lesson7.html">lesson 7 notes</a> and <a href="./Lessons/Summaries/lesson8.html">lesson 8 notes</a>. You can also access all the videos through <a href="https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU">this YouTube playlist</a>.</p>
-<p>Each video is designed to go with various chapters from the book. The entirety of every chapter of the book is available as an interactive Jupyter Notebook. <a href="https://jupyter.org/">Jupyter Notebook</a> is the most popular tool for doing data science in Python, for good reason. It is powerful, flexible, and easy to use. We think you will love it! Since the most important thing for learning deep learning is writing code and experimenting, it’s important that you have a great platform for experimenting with code.</p>
-<p>We’ll mainly use <a href="https://www.kaggle.com/docs/notebooks">Kaggle Notebooks</a> and <a href="https://gradient.run/notebooks">Paperspace Gradient</a> because we’ve found they work really well for this course, and have good free options. We also will do some parts of the course on your own laptop. (If you don’t have a Paperspace account yet, sign up with <a href="https://console.paperspace.com/signup?R=lg6rnx">this link</a> to get $10 credit – and we get a credit too.)</p>
-<p>We strongly suggest <em>not</em> using your own computer for training models in this course, unless you’re very experienced with Linux system adminstration and handling GPU drivers, CUDA, and so forth.</p>
-<p>If you need help, there’s a <a href="https://forums.fast.ai/c/p1v5/54">wonderful online community</a> ready to help you at forums.fast.ai. Before asking a question on the forums, search carefully to see if your question has been answered before.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Get started
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Start watching <a href="./Lessons/lesson1.html">lesson 1</a> now!</p>
-</div>
-</div>
-</section>
-</main> 
+
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -815,9 +277,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -827,17 +290,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -850,128 +304,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1015,7 +347,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1041,32 +372,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1126,14 +431,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-<div class="nav-page nav-page-previous">
-</div>
-<div class="nav-page nav-page-next">
-<a href="./Lessons/lesson1.html" class="pagination-link" aria-label="1: Getting started">
-<span class="nav-page-text">1: Getting started</span> <i class="bi bi-arrow-right-short"></i>
-</a>
-</div>
-</nav>
-</div> 
+</div> <!-- /content -->
+
+
+
 </body></html>
