@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "learningspiral.html",
+    "href": "learningspiral.html",
+    "title": "The Learning Spiral",
+    "section": "",
+    "text": "Learning is seldom linear; a typical syllabus is seldom effective\n\nIn order to be able to assimilate a concept, 2 things need to be fulfilled - the need for the concept and idea behind the concept. Only when the student realizes the why a concept is required, it is quite often difficult to marinate oneself in the concept. And unless one marinates, learning seldom happens. Most syallbus has always been linear. By the time one has completed the basics, one has lost all steam to move on to the more advanced, applied parts of the subject. This is almost always the case.\nWelcome to the learning spiral!\n\n\n\n\nStudy a problem\nTry to understand “why” it is a problem\nLearn a probable solution\nCode the solution\nExamine the solution to know why it is sub-optimal\nLearn a better solution\nNeed some math? Take a math detour\nGet back to code\nRepeat\n\n… and this is how we spiral up our learning non-linearly"
+  },
+  {
+    "objectID": "MLThinking.html",
+    "href": "MLThinking.html",
+    "title": "Thinking in Data",
+    "section": "",
+    "text": "Computing the unobserved from the obseravables is as much a science as it is an art\n\nAs with all of science, it demands passion, discipline and patience. And as with all art forms, it demands indulgence. From sampling methods to tuning a billion parameter large language model, requires the technical acumen of the mechanic who knows his machine in and out.\nTo be able to look at the world in terms of noisy, messily arranged obseravables and then have the pragmatic sense and the skill to apply math and statistics to model the data - not just once, but running several experimental models to estimate the relative merit of each model is the skill that the new age of unknown unknowns demands.\nMoreover, the art of cost-benefit analysis of the engineering vs modelling costs of such projects will determine potential leaders in the field going forward.\nI make a humble attempt to organize the multi-horizon field of ML into a unified view so that the students who may be interested to pursue ML as a career could slip into the mindset seamlessly."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Anand Rath",
+    "section": "",
+    "text": "I have had my fair share of experience in industrial analytics (even before the name “machine learning” caught up as a trend :) in various domains spanning over a decade. From analysing data in steel manufacturing to sensor networks I have had the happy fortune to see this field take roots in the last decade. When not engaging with analytics, I love to indulge in geopolitics, quantum computing, category thoery and long walks…"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Anand Rath",
+    "section": "Education",
+    "text": "Education\nMTech. in Computer Science, IIIT | Bangalore\nBTech. in Computer Science, BPUT | Odisha"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Anand Rath",
+    "section": "Experience",
+    "text": "Experience\nML and Analytics | Consultant | 2019 - present\nABB | Scientist | 2011- 2019\nABB | Intern Researcher | 2009 - 2011"
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "Anand Rath",
+    "section": "Publications",
+    "text": "Publications\nDachi: A networked querying system for industrial Internet of Things applications. ETFA 2017: 1-4\nAnalyzing Dependencies in an Industrial Automation Engineering System. ISEC 2015: 60-69\nAn approach for comparison of IEC 61131-3 graphical programs. ETFA 2013: 1-8\nField weighting for automatic bug triaging systems. SMC 2012: 2845-2848"
+  },
+  {
+    "objectID": "about.html#patents",
+    "href": "about.html#patents",
+    "title": "Anand Rath",
+    "section": "Patents",
+    "text": "Patents\nA method for managing subsystems of a process plant using a distributed control system | WO2016059484A1 WIPO (PCT)\nCondition monitoring of wireless networks in industrial plants | US10931551B2 United States\nA method and device for communicating process information in wireless network of industrial plant | WO2020240004A1 WIPO (PCT)"
+  },
+  {
+    "objectID": "4-5day.html",
+    "href": "4-5day.html",
+    "title": "4-5 days Bootcamp on Deep Learning",
+    "section": "",
+    "text": "Understanding a few (at least 3) model architectures deeply\nThe content will be spread across 4 to 5 days of 4-hourly sessions depending on the progress of the students in the live class\n\n\nLet’s begin by builidng a classifier…in 5 mins :)\n\nAn appreciation for modern day ML tooling\n\nSo, what is learning from data?\n\nUnderstanding the notion of ‘function learning’\n“Flexible” functions can learn just about anything\nThe Notion of “cost function”\nCalculus primer to understand minimize cost functions\n\nNeural Netwrok Foundations\n\nAn Object Recognition example\nNeural Nets as function learners\nAdjusting Weights and Biases - Backpropagation\nCoding the learning loop\n\nData Ethics\n\nThe Power and Dangers of Data\nWhy should one be careful when it comes to dealing with data?\nPrivacy\nData Ownership\nPolicies\n\nBuilding a Neural Nets from Scratch\n\nStochastic Grtadient Descent\nThe MNIST Loss Function\n\nSigmoid\nStochastic Gradient Descent and Mini-Bacthes\n\nCreating an Optimizer\n\nRandom Forests\n\nHow do they work?\nDisucssion: Statistical Modeling: The Two Cultures by Leo Breiman\nSurprise!\n\nDiscussion: Why do tree-based methods still outperform deep learing on tabular data by Grinsztajn et al\n\n\nCollaborative Filtering\n\nDeep dive into recommender systems\n\nEmbeddings and Convolutions\n\nConvolutional Neural Networks\n\nNatural Language Processing\n\nRecurrent Neural Networks\nTransformers\nThe Hugging Face Ecosystem\nSentiment Analysis Deep Dive"
+  },
+  {
+    "objectID": "longterm.html",
+    "href": "longterm.html",
+    "title": "Long-term Multi-semester Course",
+    "section": "",
+    "text": "A collaborative course to train ML pratitioners of the future\n\nThis is an effort to train the students in ML right from the basics of data to building and deploying production-grade ML systems. From the basic maths behind the concepts to engineering of large-scale ML systems - this course is a multi-semester effort to assimilate the vast array of concepts in ML, applying them to solve problems in various domains and turning these solutions into sustainable, evolvable and maintainable products\nThis track aims to develop the ML mindset - looking at the world from a data lens."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Age of Unknown Unknowns",
+    "section": "",
+    "text": "From known uknowns to unknown unknowns is the journey from computing to learning from data\n\n\n\nSource: https://fairing.co/blog/research/known-unknowns-matrix-ecommerce/\n\nComputing has always been about search. Searching for solutions in really large solutions spaces. Be it the Knuth-Morris-Pratt search or Naive Bayes algorithm, the computing community keeps looking for elegant and performant algorithms in large algorithm spaces to push the frontiers of the known unknown - the world that we know that we are unware of till now. Here’s an interesting story: The Strassen’s matrix mulitplication of 1969 was known to be the fastest matrix mulitplication algorithm till date. But a neural network changed everything.\nIn 2022, a DeepMind deep neural network, AlphaTensor discovered a way to multiply matrices faster.\nFor 2 4X4 matrices a reduction from 49 steps to 47 means trillions of matrix calculations taking place in a GPU every day. This allows AI models to run faster and relatively cheaper. An AI had solved an AI problems\nWelcome to the age of unknown unknowns - a time in our lives where we don’t know anymore what’s unknown to us - and AI is probably tackling what’s out there and beyond!"
+  },
+  {
+    "objectID": "1dayicebreaker.html",
+    "href": "1dayicebreaker.html",
+    "title": "2 days Ice Breaker session on ML",
+    "section": "",
+    "text": "Getting to know ML Landscape"
+  },
+  {
+    "objectID": "HowToThinkinML.html",
+    "href": "HowToThinkinML.html",
+    "title": "How to Think in ML",
+    "section": "",
+    "text": "A Project-based learing experience to appreciate ML\n\n\n\n\nThis is a real piece of code we may begin with…\n\n\nYes, we begin with building a model right away. We play with lots of models. We tinker with code and tune the code. I believe the only way to learn the nuts and bolts of math and models is to tinker more and more and more.\nThe linear path to learning the art of ML isn’t as effective as it is made out to be. First maths fundamentals, followed by basic concepts of ML and then deep learning and foundation models is a flawed way to learn. No expert learns that away. Think about musicians, dancers. radio engineers, automobile designers - all of them have tinkered, faltered, discoverd the necessary math, went back to the libraries, came back and then tinkered some more.\nPlaying around with data is a great way to learn. I take students on a exploratory journey of data that showcases the how one can dig out unobvious insights hidden in data and the power of computer in sifting through data of unseen scale. I am sure one will deeply appreiciate the power of data and compuatation after such a journey."
+  }
+]
