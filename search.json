@@ -60,7 +60,7 @@
     "href": "longterm.html",
     "title": "Long-term Multi-semester Course",
     "section": "",
-    "text": "A collaborative course to train ML pratitioners of the future\n\nThis is an effort to train the students in ML right from the basics of data to building and deploying production-grade ML systems. From the basic maths behind the concepts to engineering of large-scale ML systems - this course is a multi-semester effort to assimilate the vast array of concepts in ML, applying them to solve problems in various domains and turning these solutions into sustainable, evolvable and maintainable products.\nThis track aims to develop the ML mindset - the mindset that enables us to look at the world from a data lens."
+    "text": "A collaborative course to train ML practitioners of the future\n\nThis is an effort to train the students in ML right from the basics of data to building and deploying production-grade ML systems. From the basic maths behind the concepts to engineering of large-scale ML systems - this course is a multi-semester effort to assimilate the vast array of concepts in ML, applying them to solve problems in various domains and turning these solutions into sustainable, evolvable and maintainable products.\nThis track aims to develop the ML Systems Engineering Culture - the culture that enables us to look at the world from a data lens, evaluate our solution options, and build pragmatic ML systems that are economical, impactful and sustainable."
   },
   {
     "objectID": "index.html",
