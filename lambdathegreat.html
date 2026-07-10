@@ -240,6 +240,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <section id="the-von-neumann-disease">
+    <div style="display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; text-align: justify;">
       <h2>The von Neumann Disease</h2>
       <p>
         In 1977, John Backus diagnosed a terminal architectural illness in software engineering. He called the assignment statement "the von Neumann bottleneck in miniature". He wasn't merely critiquing hardware; he exposed how this word-at-a-time communication between CPU and memory forces programs to be written as sequences of state mutations rather than mathematical transformations. When we code imperatively, the consequence is severe history-sensitivity: every line of code has meaning only relative to all the assignments that came before it. Mutable, implicit state is the primary source of operational pain. If a function mutates a buffer or relies on history, you cannot cache it, parallelise it, or replay it. 
@@ -292,6 +293,7 @@ ul.task-list li input[type="checkbox"] {
         Ultimately, this stack fundamentally shifts our mindset. We transition from "ordering the computer around" to defining structural, mathematical transformations. In doing so, we engineer correctness at scale.
       </p>
     </section>
+</div>
 
 
 </section>
