@@ -239,8 +239,10 @@ ul.task-list li input[type="checkbox"] {
       <strong>TL;DR:</strong> Imperative programming is a fragile sequence of state mutations that inevitably breaks at scale. By treating code as pure mathematical transformations using the laws of Functional Programming—and deploying Lisp at the edge with Haskell in the cloud—we can engineer robust, protocol-first systems designed to survive for 50 years without bit rot. 
     </div>
 
+  
+ <div style="display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; text-align: justify;">
     <section id="the-von-neumann-disease">
-    <div style="display: flex; flex-direction: column; max-width: 1000px; margin: 0 auto; text-align: justify;">
+   
       <h2>The von Neumann Disease</h2>
       <p>
         In 1977, John Backus diagnosed a terminal architectural illness in software engineering. He called the assignment statement "the von Neumann bottleneck in miniature". He wasn't merely critiquing hardware; he exposed how this word-at-a-time communication between CPU and memory forces programs to be written as sequences of state mutations rather than mathematical transformations. When we code imperatively, the consequence is severe history-sensitivity: every line of code has meaning only relative to all the assignments that came before it. Mutable, implicit state is the primary source of operational pain. If a function mutates a buffer or relies on history, you cannot cache it, parallelise it, or replay it. 
